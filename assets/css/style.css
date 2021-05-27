@@ -1,0 +1,125 @@
+.container {
+  width: 90%;
+  max-width: none;
+}
+
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+.homeCard p {
+  font-size: 36px;
+  line-height: 130%;
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.card-image .responsive-img {
+  max-height: 18vh;
+}
+
+.card h4 {
+  margin: 0 0 1em 0;
+}
+
+#index-banner {
+  background-color: #00796b;
+  color: #fff;
+  position: relative;
+  top: -20px;
+  min-height: 50vh;
+  padding-top: 9vh;
+  margin-top: 0;
+}
+
+#homeMain {
+  /* background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("home.jpg"); */
+  position: relative;
+  top: -10vh;
+  color: #fff;
+  min-height: 30vh;
+}
+
+/* Color Styles */
+.brand {
+  font-weight: 700;
+  font-size: 28px;
+}
+
+.accent {
+  color: #021C1E;
+}
+
+.accent2 {
+  color: #004445;
+}
+
+/* Margins */
+.mb-0 {
+  margin-bottom: 0;
+}
+.mb-3 {
+  margin-bottom: 3rem;
+}
+.mb-6 {
+  margin-bottom: 6rem;
+}
+
+.mt-0 {
+  margin-top: 0;
+}
+.mt-3 {
+  margin-top: 3rem;
+}
+.mt-6 {
+  margin-top: 6rem;
+}
+
+.spacer {
+  height: 10vh;
+}
+
+/* Headings */
+h3 {
+  margin: 0;
+  line-height: 100%;
+}
+
+/* General Styles */
+.caps {
+  text-transform: uppercase;
+}
+
+.big {
+  font-size: 98px;
+}
+
+a {
+  color: #fae3d9;
+  transition: all 2s;
+}
+
+.small {
+  font-size: 0.75rem;
+}
+
+.doublespaced {
+  line-height: 150%;
+}
+
+.strong {
+  font-weight: 600;
+}
+
+/* Nav */
+
+/* Footer */
+.pad-sides {
+  padding: 0 2vw;
+}

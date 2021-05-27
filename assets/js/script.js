@@ -78,11 +78,11 @@ function getYelp() {
 }
 
 function getSpoon() {
-  axios.get(`https://api.spoonacular.com/recipes/complexSearch?query=${cuisine}&apiKey=390ebfa488364e6496ce8853bd9bb10d`)
+  axios.get(`https://api.spoonacular.com/recipes/complexSearch?query=${cuisine}&apiKey=c8da8445f1ee42ff8179bde19dff656f`)
     .then(({ data }) => {
       for (let i = 0; i < 5; i++) {
         let recId = data.results[i].id
-        axios.get(`https://api.spoonacular.com/recipes/${recId}/information?apiKey=390ebfa488364e6496ce8853bd9bb10d&includeNutrition=true`)
+        axios.get(`https://api.spoonacular.com/recipes/${recId}/information?apiKey=c8da8445f1ee42ff8179bde19dff656f&includeNutrition=true`)
           .then(res => {
             let price = Math.round(100 * (res.data.pricePerServing / 100)) / 100, imgSrc = res.data.image, recipe = res.data.instructions, time = res.data.readyInMinutes, glutenFree = res.data.glutenFree ? true : false, glutenFreeDisplay = ''
             if (glutenFree) {
